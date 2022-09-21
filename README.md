@@ -1,2 +1,2 @@
-# Random-quote-machine
-A random quote machine project for my FreeCodeCamp certifications
+# Front End Development Libraries Project in FreeCodeCamp
+all the projects i have worked on for my certification :D Hope u enjoy them !!
