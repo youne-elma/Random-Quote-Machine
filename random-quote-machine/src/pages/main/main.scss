@@ -1,3 +1,25 @@
-.main {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
+.quoteBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 5%;
+  max-width: 500px;
+  padding: 3em;
+  background-color: white;
+  .cadreBox {
+    border: 1px solid blue;
+    padding: 2em 3em;
+  }
+  .quoteText {
+    font-weight: normal;
+    font-size: 2em;
+    border: 1px solid blue;
+  }
+  .others-quote {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 1em 0;
+  }
 }

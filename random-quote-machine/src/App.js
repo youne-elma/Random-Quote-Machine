@@ -1,8 +1,9 @@
 import Main from "./pages/main/index";
+import "./App.scss";
 
 function App() {
   return (
-    <div>
+    <div id="wrapper" className="main">
       <Main />
     </div>
   );
