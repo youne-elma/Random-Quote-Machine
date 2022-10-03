@@ -1,25 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
 .quoteBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-height: 5%;
-  max-width: 500px;
-  padding: 3em;
+  position: relative;
+  max-height: 10%;
+  max-width: 700px;
+  padding: 2em 4em;
   background-color: white;
   .cadreBox {
-    border: 1px solid blue;
-    padding: 2em 3em;
+    border: 5px solid #333;
+    padding: 4em 1.5em;
   }
   .quoteText {
     font-weight: normal;
     font-size: 2em;
-    border: 1px solid blue;
   }
   .others-quote {
-    display: flex;
-    justify-content: left;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 1em 0;
+    border: 1px solid blue;
+    .quote-author {
+      border: 1px solid green;
+      justify-self: right;
+    }
   }
+}
+.quoteBox::after {
+  content: "";
+  position: absolute;
+  opacity: 0.4;
+  top: 20px;
+  left: 10px;
+  right: -15px;
+  bottom: -20px;
+  background-color: black;
+  transform: rotate(-4deg);
+  z-index: -5;
+}
+.borderOne {
+  position: absolute;
+  border: 2px solid black;
+  width: 200px;
+  padding: 12em 20em;
+  transform: rotate(-5deg);
+  z-index: -1;
 }
