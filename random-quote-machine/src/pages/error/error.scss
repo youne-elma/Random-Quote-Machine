@@ -1,0 +1,29 @@
+.main-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  .errorMessage {
+    user-select: none;
+    background-color: white;
+    padding: 1vw 2vw;
+    border: 4px solid #1c1c1c;
+    font-size: 6vw;
+    transition: 0.5s all;
+  }
+  .goBack-button {
+    color: #333;
+    text-decoration: none;
+    padding: 1vw 2vw;
+    font-size: 3vw;
+    background-color: white;
+    border: 4px solid #1c1c1c;
+    transition: 0.5s all;
+  }
+  .goBack-button:hover,
+  .errorMessage:hover {
+    color: white;
+    background-color: #1c1c1c;
+  }
+}
