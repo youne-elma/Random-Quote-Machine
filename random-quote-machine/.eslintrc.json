@@ -32,6 +32,12 @@
     "react/jsx-props-no-spreading": ["warn"],
     "react/react-in-jsx-scope": ["off"],
     "no-shadow": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   }
 }
