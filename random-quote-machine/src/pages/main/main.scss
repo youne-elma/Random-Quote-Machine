@@ -9,7 +9,6 @@
   background-color: white;
   .cadreBox {
     position: relative;
-    border: 5px solid #333;
     padding: 4em 1.5em 1em;
     .quoteDesign1 {
       position: absolute;
@@ -27,6 +26,7 @@
   .quoteText {
     font-weight: normal;
     font-size: 2em;
+    transition: 0.5s all;
   }
   .others-quote {
     display: grid;
@@ -38,24 +38,20 @@
     margin-top: 2em;
     .nextQuote {
       cursor: pointer;
-      background-color: #333;
       opacity: 0.95;
       border-style: none;
       font-size: 30px;
       padding: 10px;
       margin-right: 20px;
       border-radius: 12px;
-      border: 2px solid rgba(0, 0, 0, 0.8);
       transition: 0.5s all;
     }
     .tweetQuote {
       cursor: pointer;
       justify-self: left;
-      background-color: #333;
       padding: 9px;
       opacity: 0.95;
       border-style: none;
-      border: 2px solid rgba(0, 0, 0, 0.8);
       border-radius: 12px;
       transition: 0.5s all;
     }
@@ -70,6 +66,7 @@
       justify-self: left;
       font-size: 35px;
       z-index: 10;
+      transition: 0.5s all;
     }
     .quote-author::after {
       content: "";
