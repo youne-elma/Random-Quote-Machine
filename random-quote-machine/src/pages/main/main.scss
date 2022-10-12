@@ -1,134 +1,137 @@
-.quoteBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.mainBox {
   position: relative;
-  max-height: 10%;
-  max-width: 700px;
-  padding: 2em 4em;
-  background-color: white;
-  .cadreBox {
-    position: relative;
-    padding: 4em 1.5em 1em;
-    .quoteDesign1 {
-      position: absolute;
-      top: -60px;
-      left: 0;
-      width: 120px;
-    }
-    .quoteDesign2 {
-      position: absolute;
-      right: 0;
-      transform: rotate(180deg);
-      width: 120px;
-    }
-  }
-  .quoteText {
-    font-weight: normal;
-    font-size: 2em;
-    transition: 0.5s all;
-  }
-  .others-quote {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    padding: 1em 0;
-    margin-top: 2em;
-    .nextQuote {
-      cursor: pointer;
-      opacity: 0.95;
-      border-style: none;
-      font-size: 30px;
-      padding: 10px;
-      margin-right: 20px;
-      border-radius: 12px;
-      transition: 0.5s all;
-    }
-    .tweetQuote {
-      cursor: pointer;
-      justify-self: left;
-      padding: 9px;
-      opacity: 0.95;
-      border-style: none;
-      border-radius: 12px;
-      transition: 0.5s all;
-    }
-    .nextQuote:hover,
-    .tweetQuote:hover {
-      background-color: white;
-      opacity: 1;
-    }
-    .quote-author {
-      user-select: none;
-      position: relative;
-      justify-self: left;
-      font-size: 35px;
-      z-index: 10;
-      transition: 0.5s all;
-    }
-    .quote-author::after {
-      content: "";
-      position: absolute;
-      background-color: #333;
-      right: 0;
-      bottom: -2px;
-      left: 0;
-      padding: 10px;
-      z-index: -1;
-    }
-  }
-}
-.quoteBox::after {
-  content: "";
-  position: absolute;
-  opacity: 0.4;
-  top: 20px;
-  left: 0;
-  right: 0;
-  bottom: -20px;
-  background-color: black;
-  transform: rotate(-4deg);
-  z-index: -5;
-}
-.borderOne {
-  position: absolute;
-  border: 2px solid black;
-  width: 200px;
-  padding: 14vw 25vw;
-  transform: rotate(-5deg);
-  z-index: -1;
-}
-@media screen and (max-width: 860px) {
-  .quoteBox::after {
-    transform: rotate(0deg);
-  }
-}
-@media screen and (max-width: 650px) {
   .quoteBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    max-height: 10%;
+    max-width: 700px;
+    padding: 2em 4em;
+    background-color: white;
+    .cadreBox {
+      position: relative;
+      padding: 4em 1.5em 1em;
+      .quoteDesign1 {
+        position: absolute;
+        top: -60px;
+        left: 0;
+        width: 120px;
+      }
+      .quoteDesign2 {
+        position: absolute;
+        right: 0;
+        transform: rotate(180deg);
+        width: 120px;
+      }
+    }
+    .quoteText {
+      font-weight: normal;
+      font-size: 2em;
+      transition: 0.5s all;
+    }
     .others-quote {
-      grid-template-rows: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      justify-items: center;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       align-items: center;
-      gap: 20px;
-      .tweetQuote {
-        justify-self: center;
-      }
+      justify-content: center;
+      padding: 1em 0;
+      margin-top: 2em;
       .nextQuote {
-        margin-right: 0;
+        cursor: pointer;
+        opacity: 0.95;
+        border-style: none;
+        font-size: 30px;
+        padding: 10px;
+        margin-right: 20px;
+        border-radius: 12px;
+        transition: 0.5s all;
       }
-      .quote-author {
-        justify-self: center;
-        grid-column: 1/3;
-        grid-row: 2/3;
+      .tweetQuote {
+        cursor: pointer;
+        justify-self: left;
+        padding: 9px;
+        opacity: 0.95;
+        border-style: none;
+        border-radius: 12px;
+        transition: 0.5s all;
+      }
+      .nextQuote:hover,
+      .tweetQuote:hover {
+        background-color: white;
+        opacity: 1;
+      }
+      .quoteAuthorBlock {
+        position: relative;
+        .quoteAuthor {
+          position: relative;
+          font-size: 35px;
+          z-index: 10;
+          transition: 0.5s all;
+        }
+        .quoteAuthorAfter {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          padding: 10px;
+        }
       }
     }
   }
-}
-@media screen and (max-width: 420px) {
+  .quoteBox::after {
+    content: "";
+    position: absolute;
+    opacity: 0.4;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    background-color: black;
+    transform: rotate(-4deg);
+    z-index: -5;
+  }
   .borderOne {
-    display: none;
+    position: absolute;
+    border: 2px solid black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
+  @media screen and (max-width: 860px) {
+    .quoteBox::after {
+      transform: rotate(0deg);
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .quoteBox {
+      .others-quote {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 20px;
+        .tweetQuote {
+          justify-self: center;
+        }
+        .nextQuote {
+          margin-right: 0;
+        }
+        .quoteAuthorBlock {
+          justify-self: center;
+          grid-column: 1/3;
+          grid-row: 2/3;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .borderOne {
+      display: none;
+    }
   }
 }

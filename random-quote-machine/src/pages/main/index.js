@@ -67,7 +67,7 @@ function Main() {
   };
   document.body.style.backgroundColor = `${color}`;
   return (
-    <div>
+    <div className="mainBox">
       <span className="borderOne" />
       <div id="quote-box" className="quoteBox">
         <div className="cadreBox" style={{ border: `5px solid ${color}` }}>
@@ -93,11 +93,21 @@ function Main() {
               onMouseEnter={handleTweetMouseEnter}
               onMouseLeave={handleTweetMouseLeave}
             >
-              <a href="#link">
+              <a
+                href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="${quote.quote}" ${quote.author}`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img alt="twitter logo" src={twitterLogo} />
               </a>
             </button>
-            <p className="quote-author">{quote.author}</p>
+            <div className="quoteAuthorBlock">
+              <p className="quoteAuthor">{quote.author}</p>
+              <span
+                className="quoteAuthorAfter"
+                style={{ backgroundColor: `${color}` }}
+              />
+            </div>
           </div>
           <img alt="quotes design" className="quoteDesign2" src={quoteDesign} />
         </div>
