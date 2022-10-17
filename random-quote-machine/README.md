@@ -10,6 +10,10 @@ This is a complete Random Quote Machine, fully optimized for desktop and mobile,
 
 ![Main page, Random Quote Machine App](/random-quote-machine/src/assets/MainPage.PNG)
 
+> Error Page
+
+![Error page, Random Quote Machine App](/random-quote-machine/src/assets/ErrorPage.PNG)
+
 ## Table of contents
 
 1. [Demo](#Demo)
@@ -19,8 +23,8 @@ This is a complete Random Quote Machine, fully optimized for desktop and mobile,
 
 ## Demo
 
-Here is the working live Demo: []
-And the figma design that i did myself: []
+Here is the working live Demo: [] /// when i will finish all the projects
+And the figma design that i did myself: (FreeCodeCamp Projects)[https://www.figma.com/file/93irN0bTAY1AldEJxt8jc2/FreeCodeCamp-Projects?node-id=0%3A1]
 
 ## Technologies
 
