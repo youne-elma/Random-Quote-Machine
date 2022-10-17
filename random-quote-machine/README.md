@@ -1,14 +1,14 @@
 # Random Quote Machine "FreeCodeCamp"
 
-This project is made with Html / Sass / Reactjs / Redux
+This project is made with Html / Sass / Reactjs
 
-This is a complete Random Quote Machine, fully optimized for desktop and mobile, with a great design made also by me in Figma [Random Quote Machine Design]()
+This is a complete Random Quote Machine, fully optimized for desktop and mobile, with a great design made also by me in Figma [Random Quote Machine Design](https://www.figma.com/file/93irN0bTAY1AldEJxt8jc2/FreeCodeCamp-Projects?node-id=0%3A1)
 
 **Fetch API**: i used this quotes API (https://type.fit/api/quotes) to fetch all the quotes and authors i needed to my project.
 
 > Main Page
 
-![Main page, Random Quote Machine App](/random-quote-machine/src/) ///////////////////////// Try to finish here
+![Main page, Random Quote Machine App](/random-quote-machine/src/assets/MainPage.PNG)
 
 ## Table of contents
 
