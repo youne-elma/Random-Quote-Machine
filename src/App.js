@@ -11,7 +11,7 @@ function App() {
       <Router>
         <Routes>
           <Route
-            path="/random-quote-machine/"
+            path="random-quote-machine/"
             exact
             element={
               <div id="wrapper" className="main">
@@ -19,7 +19,7 @@ function App() {
               </div>
             }
           />
-          <Route path="/random-quote-machine/*" element={<ErrorPage />} />
+          <Route path="random-quote-machine/*" element={<ErrorPage />} />
         </Routes>
       </Router>
     </AppProvider>

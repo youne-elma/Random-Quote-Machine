@@ -1,17 +1,3 @@
-# Front End Development Libraries Project from FreeCodeCamp
-
-Let's put all my front-end development libraries skills to the test, I will use Sass,React and Redux to build 5 projects that will test everything I've learned up to this point, Hope u enjoy them :D !!!!!
-
-**N.B : I did all the design myself all the links are on the READ.ME file of the project.**
-
-## Table of the 5 projects :
-
-1. Random Quote Machine
-2. Markdown Previewer
-3. Drum Machine
-4. Javascript Calculator
-5. 25 + 5 Clock
-
 # Random Quote Machine "FreeCodeCamp"
 
 This project is made with Html / Sass / Reactjs
@@ -22,11 +8,11 @@ This is a complete Random Quote Machine, fully optimized for desktop and mobile,
 
 > Main Page
 
-![Main page, Random Quote Machine App](/random-quote-machine/src/assets/MainPage.PNG)
+![Main page, Random Quote Machine App](/src/assets/MainPage.PNG)
 
 > Error Page
 
-![Error page, Random Quote Machine App](/random-quote-machine/src/assets/ErrorPage.PNG)
+![Error page, Random Quote Machine App](/src/assets/ErrorPage.PNG)
 
 ## Table of contents
 
