@@ -23,7 +23,7 @@ This is a complete Random Quote Machine, fully optimized for desktop and mobile,
 
 ## Demo
 
-Here is the working live Demo: [Random-Quote-Machine](https://youne-elma.github.io/random-quote-machine/)
+Here is the working live Demo: [Random-Quote-Machine](https://youne-elma.github.io/Random-Quote-Machine/)
 And the figma design that i did myself: [Random-Quote-Machine-Design](https://www.figma.com/file/93irN0bTAY1AldEJxt8jc2/Random-Quote-Machine?node-id=0%3A1)
 
 ## Technologies

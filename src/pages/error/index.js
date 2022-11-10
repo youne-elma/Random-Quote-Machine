@@ -47,7 +47,7 @@ function ErrorPage() {
     <div className="main-error">
       <h1 className="errorMessage">Error 404 page</h1>
       <Link
-        to="/random-quote-machine/"
+        to="/Random-Quote-Machine/"
         style={isGoBackHovering ? hoverButtonStyle : buttonStyle}
         className="goBack-button"
         onMouseEnter={handleGoBackMouseEnter}
